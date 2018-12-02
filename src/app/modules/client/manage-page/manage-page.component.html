@@ -1,0 +1,20 @@
+<div class="container" id="login-container">
+    <div class="row">
+        <div class="admin-container">
+            <p>
+                manage-page works!
+            </p>
+
+            <label>Product Id:</label>
+            <select name="repeatSelect" id="repeatSelect" (change)="onProductChange($event)">
+                <option *ngFor="let product of productIdList" value="{{product.id}}">{{product.text}}</option>
+            </select>
+            <br>
+
+            <label>Landing Page:</label>
+            <select name="repeatSelect" id="repeatSelect" (change)="onProductChange($event)">
+                <option *ngFor="let product of landingPage" value="{{product.id}}">{{product.text}}</option>
+            </select>
+        </div>
+    </div>
+</div>
