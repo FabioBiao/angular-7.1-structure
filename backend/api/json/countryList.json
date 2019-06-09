@@ -1,0 +1,144 @@
+{
+    "countries": [
+        {
+            "id": "1",
+            "name": "Angola",
+            "abr": "ag"
+        },
+        {
+            "id": "2",
+            "name": "Argentina",
+            "abr": "ar"
+        },
+        {
+            "id": "3",
+            "name": "Azerbaijan",
+            "abr": "az"
+        },
+        {
+            "id": "4",
+            "name": "Bahrain",
+            "abr": "bh"
+        },
+        {
+            "id": "5",
+            "name": "Brazil",
+            "abr": "br"
+        },
+        {
+            "id": "6",
+            "name": "Colombia",
+            "abr": "co"
+        },
+        {
+            "id": "7",
+            "name": "dominicanRepublic",
+            "abr": "do"
+        },
+        {
+            "id": "8",
+            "name": "Ecuador",
+            "abr": "ec"
+        },
+        {
+            "id": "9",
+            "name": "Estonia",
+            "abr": "ee"
+        },
+        {
+            "id": "10",
+            "name": "Ethiopia",
+            "abr": "et"
+        },
+        {
+            "id": "7",
+            "name": "Greece",
+            "abr": "gr"
+        },
+        {
+            "id": "11",
+            "name": "Guatemala",
+            "abr": "gt"
+        },
+        {
+            "id": "12",
+            "name": "Honduras",
+            "abr": "hn"
+        },
+        {
+            "id": "13",
+            "name": "Iraq",
+            "abr": "iq"
+        },
+        {
+            "id": "14",
+            "name": "Jordan",
+            "abr": "jo"
+        },
+        {
+            "id": "15",
+            "name": "Kazakhstan",
+            "abr": "kz"
+        },
+        {
+            "id": "16",
+            "name": "Kenya",
+            "abr": "ke"
+        },
+        {
+            "id": "17",
+            "name": "Kuwait",
+            "abr": "kw"
+        },
+        {
+            "id": "18",
+            "name": "Mexico",
+            "abr": "mx"
+        },
+        {
+            "id": "19",
+            "name": "Oman",
+            "abr": "om"
+        },
+        {
+            "id": "20",
+            "name": "Panana",
+            "abr": "pa"
+        },
+        {
+            "id": "21",
+            "name": "Peru",
+            "abr": "pe"
+        },
+        {
+            "id": "22",
+            "name": "Portugal",
+            "abr": "pt"
+        },
+        {
+            "id": "23",
+            "name": "Qatar",
+            "abr": "qa"
+        },
+        {
+            "id": "24",
+            "name": "Romania",
+            "abr": "ro"
+        },
+        {
+            "id": "25",
+            "name": "Saudi Arabia",
+            "abr": "sa"
+        },
+        {
+            "id": "26",
+            "name": "Turkmenistan",
+            "abr": "tu"
+        },
+        {
+            "id": "27",
+            "name": "United Arab Emirates",
+            "abr": "uae"
+        }
+    ]
+}

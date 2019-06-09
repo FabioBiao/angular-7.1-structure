@@ -6,7 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // import { AuthenticationService } from './authentication/authentication.service';
 
-
 @NgModule({
     imports: [
         CommonModule,
@@ -19,7 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         RouterModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule,
+        ReactiveFormsModule
     ],
     providers: [
 

@@ -12,7 +12,6 @@ export class AdminAuthGuard implements CanActivate, CanActivateChild {
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
         return this.chekUser(route, state);
-
     }
 
     canActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
@@ -30,7 +29,7 @@ export class AdminAuthGuard implements CanActivate, CanActivateChild {
         }
 
         // not logged in so redirect to login page with the return url
-        console.log('false auth');
+        console.log('admin false auth');
         this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
         return false;
     }

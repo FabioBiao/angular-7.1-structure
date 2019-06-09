@@ -10,11 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagePageComponent implements OnInit {
 
-    productIdList: Array<{id: number, text: string}>;
-    landingPage:  Array<{id: number, text: string}>;
+    productIdList: Array<{ id: number, text: string }>;
+    landingPage: Array<{ id: number, text: string }>;
 
     constructor(
-    ) {}
+    ) { }
 
     ngOnInit() {
 

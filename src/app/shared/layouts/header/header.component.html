@@ -10,20 +10,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" [routerLink]="['./']">Menu</a>
+                <a class="navbar-brand" [routerLink]="['./']">RCM testing</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a [routerLink]="['./login']">Login</a></li>
-                    <li class="active"><a [routerLink]="['./manage']">Manage Page</a></li>
+                    <li *ngIf="!globals.logged" class="active"><a [routerLink]="['./login']">Login</a></li>
+                    <li class="active"><a [routerLink]="['./create']">Create Campaign</a></li>
+                    <li class="active"><a [routerLink]="['./edit']">Edit Campaign</a></li>
+                    <!-- <li class="active"><a [routerLink]="['./manage']">Manage Page</a></li> -->
                     <li class="active"><a [routerLink]="['./generate']">Generate Pages</a></li>
                     <li ng-show="" class="active"><a [routerLink]="['./admin']">Go to Admin </a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pointer"><a (click)="onLogout()">logOut </a></li>
+                    <li class="pointer"><a (click)="useLanguage('en')">English</a></li>
+                    <li class="pointer"><a (click)="useLanguage('pt')">Portuguese</a></li>
+
+                    <li *ngIf="!globals.logged" class="pointer"><a [routerLink]="['./login']">Login {{![(globals.username)]}}</a></li>
+                    <li *ngIf="globals.logged" class="pointer"><p> {{globals.username }} <a (click)="onLogout()">Logout </a></p> </li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->

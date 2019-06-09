@@ -6,7 +6,8 @@ import { ClientAuthGuard } from '../../core/guards/client-auth.guard';
 import { HomeComponent } from './home/home.component';
 import { PageGenerationComponent } from './page-generation/page-generation.component';
 import { ManagePageComponent } from './manage-page/manage-page.component';
-
+import { CreateCampaignComponent } from './create-campaign/create-campaign.component';
+import { EditCampaignComponent } from './edit-campaign/edit-campaign.component';
 
 const routes: Routes = [
     {
@@ -24,6 +25,18 @@ const routes: Routes = [
     {
         path: 'manage',
         component: ManagePageComponent,
+        data: { title: 'Manage Page' },
+        canActivate: [ClientAuthGuard]
+    },
+    {
+        path: 'create',
+        component: CreateCampaignComponent,
+        data: { title: 'Manage Page' },
+        canActivate: [ClientAuthGuard]
+    },
+    {
+        path: 'edit',
+        component: EditCampaignComponent,
         data: { title: 'Manage Page' },
         canActivate: [ClientAuthGuard]
     }

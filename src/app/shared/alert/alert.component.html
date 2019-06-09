@@ -1,0 +1,6 @@
+<div class="alert-box">
+    <div *ngFor="let alert of alerts" class="alert alert-div {{alert.type}}">
+        <p class="f6">{{ alert.message }}</p>
+        <div *ngIf="alert" class="close-alert" (click)="removeAlert(alert)" aria-label="close">X</div>
+    </div>
+</div>

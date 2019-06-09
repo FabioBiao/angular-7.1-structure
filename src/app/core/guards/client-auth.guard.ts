@@ -21,18 +21,17 @@ export class ClientAuthGuard implements CanActivate, CanActivateChild {
 
     private chekUser(route, state): boolean {
         const currentUser = this.authenticationService.currentUserValue;
-        // const userType = this.authenticationService.getUserType();
-        if (currentUser) {
+        if ( currentUser ) {
             // authorised so return true
-            console.log('true auth');
-            console.log(currentUser);
+            // console.log('true auth');
+            // console.log(currentUser);
             return true;
+        } else {
+            // not logged in so redirect to login page with the return url
+            // console.log('client false auth');
+            this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
+            return false;
         }
-
-        // not logged in so redirect to login page with the return url
-        console.log('false auth');
-        this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
-        return false;
     }
 
 }

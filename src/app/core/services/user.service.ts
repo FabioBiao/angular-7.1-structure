@@ -9,7 +9,7 @@ export class UserService {
     }
 
     getAll() {
-        return 'should return all';
+        return 'cheguei aqui';
     }
     getById(id: number) {
         // return this.http.get(`${config.apiUrl}/users/${id}`);

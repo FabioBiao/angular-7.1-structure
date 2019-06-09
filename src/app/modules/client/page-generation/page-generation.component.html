@@ -1,3 +1,29 @@
-<p>
-  page-generation works!
-</p>
+<div class="container" id="generate-container">
+    <div class="row">
+        <form [formGroup]="generateCampaignForm" (ngSubmit)="onGenerate()">
+
+            <div class="generate-container">
+
+                <!-- Country -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="inputCountry">Country list:</label>
+                    <select class="form-control" name="repeatSelect" id="countryList" formControlName='inputCountry' (change)="onCountryChange($event)">
+                        <option *ngFor="let country of countryList" value="{{country.abr}}">{{country.name}}</option>
+                    </select>
+                    <small id="idHelp" class="form-text text-muted">Escolha o seu país</small>
+                </div>
+
+                <!-- País -->
+                <div class="form-group col-md-4 mb-3">
+                    <label for="inputCampaign">Select Campaign</label>
+                    <select class="form-control" name="repeatSelect" id="inputCampaign" formControlName='inputName'>
+                        <option *ngFor="let campaign of campaignList" value="{{campaign}}">{{campaign}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <button [disabled]="loading" type="submit" name="go" class="create btn btn-lg btn-primary btn-block">
+                Generate Pages </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{
+    "auth": {
+        "login": "Entrar",
+        "logout": "Sair",
+        "signIn": "faça o seu login",
+        "username": "Utilizador",
+        "password": "Password",
+        "sucessLogin": "Login efectuado com sucesso"
+    },
+    "demo": {
+        "title": "traducao teste",
+        "text": "isto é um exemplo de uma simples tradução"
+    },
+    "home":{
+        "welcome": "Bem vindo",
+        "bye": "Adeus"
+    }
+}

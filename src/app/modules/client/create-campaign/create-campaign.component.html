@@ -1,0 +1,51 @@
+<div class="container" id="home-container">
+    <div class="row">
+        <form [formGroup]="createForm" (ngSubmit)="onCreate()">
+            <!-- Country -->
+            <div class="form-group col-md-4 mb-3">
+                <label for="inputCountrye">Select Country</label>
+                <select class="form-control" id="inputCountry" formControlName='inputCountry'>
+                    <option *ngFor="let country of countryList" value="{{country.abr}}">{{country.name}}</option>
+                </select>
+            </div>
+
+            <!-- id -->
+            <div class="form-group col-md-4 mb-3">
+                <label for="exampleInputEmail1">Campaing Id</label>
+                <input type="number" class="form-control" id="inputId" aria-describedby="emailHelp" placeholder="Enter Campaign Id"
+                    formControlName='inputId'>
+                <small id="idHelp" class="form-text text-muted">Insert the Campaign Id.</small>
+            </div>
+
+            <!-- hash -->
+            <div class="form-group col-md-4 mb-3">
+                <label for="exampleInputEmail1">Campaign name</label>
+                <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Campaign name"
+                    formControlName='inputName'>
+                <small id="emailHelp" class="form-text text-muted">No spaces.</small>
+            </div>
+
+            <!-- hash -->
+            <div class="form-group col-md-4 mb-3">
+                <label for="exampleInputEmail1">Traking Id</label>
+                <input type="text" class="form-control" id="inputTraking" aria-describedby="emailHelp" placeholder="Traking id"
+                    formControlName='inputTraking'>
+                <small id="emailHelp" class="form-text text-muted">example: 1008282</small>
+            </div>
+
+            <!-- css area -->
+            <div class="form-group col-md-12 mb-3">
+                <label for="exampleInputEmail1">Campaign CSS</label>
+                <textarea rows="4" id="inputCss" aria-describedby="inputCSS" class="form-control" cols="50" formControlName='inputCSS'>
+                </textarea>
+
+                <small id="emailHelp" class="form-text text-muted">css code</small>
+            </div>
+
+            <img *ngIf="loading" class="pl-3" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+            <button [disabled]="loading" type="submit" name="go" class="create btn btn-lg btn-primary btn-block">
+                Create </button>
+        </form>
+    </div>
+</div>

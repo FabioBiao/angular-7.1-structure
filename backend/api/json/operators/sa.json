@@ -1,0 +1,56 @@
+{
+    "locate": "en",
+    "cod": 966,
+    "name": "saudiArabia",
+    "operators": {
+      "STC": {
+        "opid": 195,
+        "subscribe": [
+          "exttools",
+          "subscribeInservicesastcwam"
+        ],
+        "validatePin": [
+          "exttools",
+          "validatepasswordsastcwam"
+        ]
+      },    
+      "STCnewbroker": {
+        "opid": 195,
+        "subscribe": [
+          "exttools",
+          "subscribeinservicesdpglobal"
+        ],
+        "validatePin": [
+          "exttools",
+          "validationmawaridstcglobal"
+        ],
+        "subscriptionInfo": [
+          "exttools",
+          "subscriptioninfo"
+        ]
+      },
+      "Zain": {
+        "opid": 400,
+        "subscribe": [
+          "exttools",
+          "subscribeInServiceSAZainSDP"
+        ],
+        "validatePin": [
+          "exttools",
+          "validatePasswordSAZainSDP"
+        ]
+      },
+      "Mobily": {
+        "opid": 357,
+        "subscribe": [
+          "exttools",
+          "subscribeInservicesamobilyngsdp"
+        ],
+        "validatePin": [
+          "exttools",
+          "validatepasswordsamobilyngsdp"
+        ]
+      }
+    }
+  }
+  
